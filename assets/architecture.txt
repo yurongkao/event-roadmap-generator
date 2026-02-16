@@ -1,0 +1,15 @@
+User Input
+    ↓
+Streamlit UI
+    ↓
+Scheduling Engine (engine.py)
+    ↓
+DataFrame Pipeline
+    ↓
+LLM Layer (ai_helper.py)
+    ↓
+OpenAI API
+    ↓
+Structured JSON Output
+    ↓
+UI Render
