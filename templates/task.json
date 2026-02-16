@@ -1,0 +1,542 @@
+[
+    {
+      "task_id": "T01",
+      "task": "Reach out to new partner",
+      "project": "Partner",
+      "anchor": "director_start_date",
+      "end_offset_days": 0,
+      "duration_days": 7,
+      "depends_on": [],
+      "default_status": "Not Started"
+    },
+    {
+      "task_id": "T02",
+      "task": "Update event date research",
+      "project": "Event Execution",
+      "anchor": "director_start_date",
+      "end_offset_days": 0,
+      "duration_days": 14,
+      "depends_on": [],
+      "default_status": "Not Started"
+    },
+    {
+      "task_id": "T03",
+      "task": "Host SI team bonding",
+      "project": "Others",
+      "anchor": "director_start_date",
+      "end_offset_days": 0,
+      "duration_days": 14,
+      "depends_on": [],
+      "default_status": "Not Started"
+    },
+    {
+        "task_id": "T04",
+        "task": "Confirm partner and start discussion",
+        "project": "Partner",
+        "anchor": "director_start_date",
+        "end_offset_days": 0,
+        "duration_days": 14,
+        "depends_on": ["T01"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T05",
+        "task": "Confirm event date",
+        "project": "Event Execution",
+        "anchor": "director_start_date",
+        "end_offset_days": 7,
+        "duration_days": 14,
+        "depends_on": ["T02"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T06",
+        "task": "Host SI kickoff meeting",
+        "project": "Others",
+        "anchor": "director_start_date",
+        "end_offset_days": 7,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T07",
+        "task": "Send out lecturer invite email",
+        "project": "Event Execution",
+        "anchor": "director_start_date",
+        "end_offset_days": 21,
+        "duration_days": 7,
+        "depends_on": ["T05"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T08",
+        "task": "Send out judge invite email",
+        "project": "Event Execution",
+        "anchor": "director_start_date",
+        "end_offset_days": 21,
+        "duration_days": 7,
+        "depends_on": ["T05"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T09",
+        "task": "Gather insights from S25 attendee's interviews",
+        "project": "Others",
+        "anchor": "director_start_date",
+        "end_offset_days": 7,
+        "duration_days": 14,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T10",
+        "task": "Confirm theme and venue with partner",
+        "project": "Partner",
+        "anchor": "director_start_date",
+        "end_offset_days": 14,
+        "duration_days": 21,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T11",
+        "task": "Confirm lecturers and judges' availability",
+        "project": "Event Execution",
+        "anchor": "director_start_date",
+        "end_offset_days": 35,
+        "duration_days": 7,
+        "depends_on": ["T07", "T08"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T12",
+        "task": "Confirm SI Marketing Messages",
+        "project": "Marketing",
+        "anchor": "director_start_date",
+        "end_offset_days": 21,
+        "duration_days": 14,
+        "depends_on": ["T09"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T13",
+        "task": "Introduce & brainstorm landing page refinement",
+        "project": "Landing Page",
+        "anchor": "director_start_date",
+        "end_offset_days": 28,
+        "duration_days": 14,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T14",
+        "task": "Revise landing page v1",
+        "project": "Landing Page",
+        "anchor": "director_start_date",
+        "end_offset_days": 42,
+        "duration_days": 21,
+        "depends_on": ["T13"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T15",
+        "task": "Revise landing page v2",
+        "project": "Landing Page",
+        "anchor": "director_start_date",
+        "end_offset_days": 63,
+        "duration_days": 14,
+        "depends_on": ["T14"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T16",
+        "task": "Send info collection email for lecturers/judges",
+        "project": "Event Execution",
+        "anchor": "director_start_date",
+        "end_offset_days": 42,
+        "duration_days": 14,
+        "depends_on": ["T11"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T17",
+        "task": "Complete financials v1",
+        "project": "Others",
+        "anchor": "director_start_date",
+        "end_offset_days": 42,
+        "duration_days": 14,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T18",
+        "task": "Confirm ways of marketing with partner",
+        "project": "Partner",
+        "anchor": "director_start_date",
+        "end_offset_days": 49,
+        "duration_days": 14,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T19",
+        "task": "Complete financials vF",
+        "project": "Others",
+        "anchor": "director_start_date",
+        "end_offset_days": 56,
+        "duration_days": 7,
+        "depends_on": ["T17"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T20",
+        "task": "Confirm partner's staff, judges, and speaker",
+        "project": "Partner",
+        "anchor": "director_start_date",
+        "end_offset_days":56,
+        "duration_days": 14,
+        "depends_on": ["T17"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T21",
+        "task": "Revise landing page vF",
+        "project": "Landing Page",
+        "anchor": "director_start_date",
+        "end_offset_days":63,
+        "duration_days": 14,
+        "depends_on": ["T15"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T22",
+        "task": "Introduce & Brainstorm new non-IG marketing",
+        "project": "Marketing",
+        "anchor": "event_date",
+        "end_offset_days": -82,
+        "duration_days": 21,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T23",
+        "task": "Update and confirm marketing materials with partner",
+        "project": "Partner",
+        "anchor": "event_date",
+        "end_offset_days": -82,
+        "duration_days": 21,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T24",
+        "task": "Confirm IG marketing with MS",
+        "project": "Marketing",
+        "anchor": "event_date",
+        "end_offset_days": -75,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T25",
+        "task": "Confirm new non-IG marketing",
+        "project": "Marketing",
+        "anchor": "event_date",
+        "end_offset_days": -68,
+        "duration_days": 14,
+        "depends_on": ["T22"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T26",
+        "task": "Share IG marketing timeline with partner",
+        "project": "Partner",
+        "anchor": "event_date",
+        "end_offset_days": -68,
+        "duration_days": 7,
+        "depends_on": ["T25"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T27",
+        "task": "Organize all marketing materials to support MS",
+        "project": "Marketing",
+        "anchor": "event_date",
+        "end_offset_days": -68,
+        "duration_days": 7,
+        "depends_on": ["T25"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T28",
+        "task": "Start all non-IG marketing",
+        "project": "Marketing",
+        "anchor": "event_date",
+        "end_offset_days": -61,
+        "duration_days": 35,
+        "depends_on": ["T24","T25"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T29",
+        "task": "Start early bird registration",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -61,
+        "duration_days": 21,
+        "depends_on": ["T24","T25", "T28"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T30",
+        "task": "Confirm lunch options and update attendee confirmation form",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -54,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T31",
+        "task": "Discuss schedule structure",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -54,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T32",
+        "task": "Update all attendee emails",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -54,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T33",
+        "task": "Introduce schedule revision plan",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -40,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T34",
+        "task": "Start regular registration",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -40,
+        "duration_days": 14,
+        "depends_on": [],
+        "default_status": "Milestone"
+      },
+      {
+        "task_id": "T35",
+        "task": "Sent out early bird result email",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -40,
+        "duration_days": 3,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T36",
+        "task": "Receive early bird applicants' payment confirmation",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -37,
+        "duration_days": 4,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T37",
+        "task": "Sent out staff recruitment email",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -33,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T38",
+        "task": "Confirm staff",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -26,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T39",
+        "task": "Sent out regular result email",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -26,
+        "duration_days": 3,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T40",
+        "task": "Receive regular applicants' payment confirmation",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -23,
+        "duration_days": 4,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T41",
+        "task": "Update registration results to partner",
+        "project": "Partner",
+        "anchor": "event_date",
+        "end_offset_days": -27,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T42",
+        "task": "Confirm all event materials from partners",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -27,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T43",
+        "task": "Reserve staff dinner",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -17,
+        "duration_days": 7,
+        "depends_on": ["T38"],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T44",
+        "task": "Order lunch & drinks",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -17,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T45",
+        "task": "Finalize all printed materials",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -17,
+        "duration_days": 7,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T46",
+        "task": "Host facilitator training",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -12,
+        "duration_days": 5,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T47",
+        "task": "Finalize feedback form",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -12,
+        "duration_days": 5,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T48",
+        "task": "Print out all materials",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -12,
+        "duration_days": 5,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T49",
+        "task": "Send staff & attendees 行前通知",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": -12,
+        "duration_days": 2,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T50",
+        "task": "Host the 9th Social Impactathon",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": 1,
+        "duration_days": 2,
+        "depends_on": [],
+        "default_status": "Milestone"
+      },
+      {
+        "task_id": "T51",
+        "task": "Send out thank-you email",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": 3,
+        "duration_days": 1,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T52",
+        "task": "Send out certificates",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": 6,
+        "duration_days": 2,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T53",
+        "task": "Upload photos to FB album and google photos",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": 3,
+        "duration_days": 2,
+        "depends_on": [],
+        "default_status": "Not Started"
+      },
+      {
+        "task_id": "T54",
+        "task": "Send judges their photos",
+        "project": "Event Execution",
+        "anchor": "event_date",
+        "end_offset_days": 5,
+        "duration_days": 2,
+        "depends_on": [],
+        "default_status": "Not Started"
+      }
+  ]
